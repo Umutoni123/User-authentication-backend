@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 ###
 GET http://localhost:3000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q0OTA5ZmNlYWQzYjUzNGU3NTQ0ZjIiLCJpYXQiOjE3NDIzMTk5MjYsImV4cCI6MTc0MjMyNzEyNn0.VH-qndH_BO1YfhNlMeLgxKp5k6ztIp6DaXNSpv9lVnE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2RjYjAwMDgwOWJiMmQ4ZTUxYmRmNTIiLCJpYXQiOjE3NDI1MTcyNTMsImV4cCI6MTc0MjUyMDg1M30.eY1jBrJtCYhoj_vrYQPU0V3ZxUiKXsooH61i9hN60lM
 
 ###
 POST http://localhost:3000/login
@@ -21,15 +21,20 @@ Content-Type: application/json
 }
 ###
 GET http://localhost:3000/getallexpenses
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2RjYjAwMDgwOWJiMmQ4ZTUxYmRmNTIiLCJpYXQiOjE3NDI1MTc3NzEsImV4cCI6MTc0MjUyMTM3MX0.5go3IUPh2rKV8LIieT8XcgoauLUHOeEOuYxVPsEcjjw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2RjYjAwMDgwOWJiMmQ4ZTUxYmRmNTIiLCJpYXQiOjE3NDI1MjQxNTUsImV4cCI6MTc0MjUyNzc1NX0.eAX6TDzFnI83loZ7eXwnq5Nu1XvOtDYrzHdIX4bETpw
 
 ###
 
 POST http://localhost:3000/addexpense
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2RjYjAwMDgwOWJiMmQ4ZTUxYmRmNTIiLCJpYXQiOjE3NDI1MTcyNTMsImV4cCI6MTc0MjUyMDg1M30.eY1jBrJtCYhoj_vrYQPU0V3ZxUiKXsooH61i9hN60lM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2RjYjAwMDgwOWJiMmQ4ZTUxYmRmNTIiLCJpYXQiOjE3NDI1MjQxNTUsImV4cCI6MTc0MjUyNzc1NX0.eAX6TDzFnI83loZ7eXwnq5Nu1XvOtDYrzHdIX4bETpw
 Content-Type: application/json
 
 {
    "amount": 50000,
    "reason": "bike"
 }
+
+###
+DELETE  http://localhost:3000/deleteexpense/67dcd1dd02c6cc73bbe67aae
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2RjYjAwMDgwOWJiMmQ4ZTUxYmRmNTIiLCJpYXQiOjE3NDI1MjQxNTUsImV4cCI6MTc0MjUyNzc1NX0.eAX6TDzFnI83loZ7eXwnq5Nu1XvOtDYrzHdIX4bETpw
+
