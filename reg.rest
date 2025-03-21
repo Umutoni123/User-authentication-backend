@@ -3,9 +3,9 @@ POST http://localhost:3000/register
 Content-Type: application/json
 
 {
-   "name": "John noe",
-   "email": "johnnoell11234@example.com",
-   "password": "password123"
+   "name": "Gasaro",
+   "email": "gasaro@example.com",
+   "password": "123456"
 }
 ###
 GET http://localhost:3000/users
@@ -16,17 +16,17 @@ POST http://localhost:3000/login
 Content-Type: application/json
 
 {
-   "email": "johndoe@example.com",
-   "password": "password123"
+   "email": "gasaro@example.com",
+   "password": "123456"
 }
 ###
 GET http://localhost:3000/getallexpenses
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q0OTA5ZmNlYWQzYjUzNGU3NTQ0ZjIiLCJpYXQiOjE3NDIzOTczMDYsImV4cCI6MTc0MjQwMDkwNn0.CuSbiKsibZW8JdMESwy5pSq6w-kG9y4H0saHh67xP_Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2RjYjAwMDgwOWJiMmQ4ZTUxYmRmNTIiLCJpYXQiOjE3NDI1MTc3NzEsImV4cCI6MTc0MjUyMTM3MX0.5go3IUPh2rKV8LIieT8XcgoauLUHOeEOuYxVPsEcjjw
 
 ###
 
 POST http://localhost:3000/addexpense
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q0OTA5ZmNlYWQzYjUzNGU3NTQ0ZjIiLCJpYXQiOjE3NDIzOTczMDYsImV4cCI6MTc0MjQwMDkwNn0.CuSbiKsibZW8JdMESwy5pSq6w-kG9y4H0saHh67xP_Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2RjYjAwMDgwOWJiMmQ4ZTUxYmRmNTIiLCJpYXQiOjE3NDI1MTcyNTMsImV4cCI6MTc0MjUyMDg1M30.eY1jBrJtCYhoj_vrYQPU0V3ZxUiKXsooH61i9hN60lM
 Content-Type: application/json
 
 {

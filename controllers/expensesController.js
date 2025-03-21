@@ -6,12 +6,12 @@ exports.addExpense = async (req, res) => {
     try {
         console.log("User in request:", req.user); // Debugging log
 
-        if (!req.user || !req.user.id) {
+        if (!req.user || !req.user.userId) {
             return res.status(401).json({ message: "Unauthorized: No user ID found" });
         }
 
         const { amount, reason } = req.body;
-        const userId = req.user.id;
+        const userId = req.user.userId;
 
         const expense = new Expenses({ userId, amount, reason });
         await expense.save();
@@ -26,7 +26,7 @@ exports.addExpense = async (req, res) => {
 
 exports.getExpenses = async(req, res) =>{
     try {
-        const expenses = await Expenses.find({user: req.user.id})
+        const expenses = await Expenses.find({userId: req.user.userId})
         res.json(expenses)
         
     } catch (error) {
